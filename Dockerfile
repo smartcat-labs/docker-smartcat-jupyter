@@ -72,6 +72,8 @@ RUN addgroup --gid $NB_GID $NB_GROUP && \
 
 USER $NB_USER
 
+ENV PATH $CONDA_DIR/bin:$PATH
+
 RUN mkdir $HOME/work
 
 ENV MINICONDA_VERSION 4.3.21
